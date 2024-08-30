@@ -1,0 +1,133 @@
+*{
+    font-family: "Montserrat", sans-serif;
+
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+
+  }
+  
+  body {
+    background-color:#282828;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .glass-container {
+    position: relative;
+    width: 320px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    border-radius: 20px;
+    overflow: hidden;
+
+  }
+  
+  .glass-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  }
+  
+  .container {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  
+  .container img {
+    height: 100px;
+  }
+  .container form{
+    text-align: center;
+  }
+  .temperature-info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .container .city{
+    text-align: center;
+  }
+  .container .date{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  form input{
+    border-radius: 16px;
+    padding: 5px 50px 5px 10px;
+    background: transparent;
+    flex: 1;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+  }
+  ::placeholder{
+    color:rgba(255, 255, 255, 0.3);
+
+  }
+  #searchButton{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+
+    
+
+
+}
+
+  .wind-humidity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  .wind-humidity img{
+    height: 35px;
+  }
+  .humiditybox{
+display: flex;
+line-height: 0.8;
+
+  }
+  .windspeed{
+display: flex;
+line-height: 0.8;
+  }
+  .humidity{
+margin-left: 6px;
+  }
+  .wind{
+    margin-left: 6px;
+
+  }
+

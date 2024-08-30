@@ -1,0 +1,56 @@
+*{
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+
+.container{
+background-color:#000;
+color:#fff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container img{
+  height: 300px;
+
+}
+
+.container h1{
+  font-size: 4rem;
+}
+
+.auto{
+  color: #ffab2b;
+}
+
+.myform{
+  width: fit-content;
+  padding: 22px 32px 22px 32px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 32px;
+}
+
+.myform input{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color:#fff;
+}
+
+.myform form button{
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+}
+
